@@ -182,6 +182,10 @@ PRODUCT_PACKAGES += \
     qspa_system.rc \
     qspa_default.rc
 
+# Trusted User Interface
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
+
 # usbudev service for usb ip assigment
 PRODUCT_PACKAGES += \
     usbudev
@@ -200,6 +204,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
 
 # RFS APQ GNSS symlinks
 PRODUCT_PACKAGES += \
